@@ -2,3 +2,20 @@
     --green-clr: #596D48;
     --light-clr: #E5E7EB;
 }
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+}
+.logo-container{
+    height: 100vh;
+    background-image: url(./img/photo-1585202900225-6d3ac20a6962.avif);
+    flex: 0 0 460px;
+}
+.form-section-container{
+    flex: 0 0 960px;
+}
