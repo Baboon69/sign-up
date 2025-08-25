@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Sign Up form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <main class="container">
         <section class="logo-container">
             <h1 class="logo">
-                <img src="./img/odin-lined.png" alt="lined head of odin">
-                Odin
+                <img src="./img/odin-lined.png" alt="lined head of odin" class="logo-img">
+                <span class="logo-text">Odin</span>
             </h1>
             <span class="photo-title">
                 Photo by <a class="photo-title-link" href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a class="photo-title-link" href="https://unsplash.com/">Unsplash</a>
@@ -21,11 +24,11 @@
             <form action="">
                 <div class="form-section">
                     <h2 class="form-section-title">
-                        This is not a real onlive Servise! You know you need something
-                        like this in your life to help your realize your deepest dreams.
-                        Sign up <i>now</i> to get started.
-        
-                        You know you want to.
+                        This is not a real onlive Servise! You know you need something <br>
+                        like this in your life to help your realize your deepest dreams. <br>
+                        Sign up <i>now</i> to get started. <br>
+                        <br>
+                        You <i>know</i> you want to.
                     </h2>
                 </div>
                 <div class="form-section">
@@ -37,7 +40,7 @@
                                 <input type="text" id="fname">
                             </div>
                             <div>
-                                <label for="lname">First name</label>
+                                <label for="lname">Last name</label>
                                 <input type="text" id="lname">
                             </div>
                         </fieldset>
@@ -45,11 +48,11 @@
                     <div>
                         <fieldset>
                             <div>
-                                <label for="email">First name</label>
+                                <label for="email">Email</label>
                                 <input type="email" id="email">
                             </div>
                             <div>
-                                <label for="phone">First name</label>
+                                <label for="phone">Phone number</label>
                                 <input type="tel" id="phone">
                             </div>
                         </fieldset>
@@ -58,18 +61,18 @@
                         <fieldset>
                             <div>
                                 <label for="pas">Password</label>
-                                <input type="password" id="pas">
+                                <input type="password" id="pas" required>
                             </div>
                             <div>
-                                <label for="cpas">Password</label>
-                                <input type="password" id="cpas">
+                                <label for="cpas">Confirm password</label>
+                                <input type="password" id="cpas" required>
                             </div>
                         </fieldset>
                     </div>
                 </div>
                 <div class="form-section">
                     <button type="submit">Create Account</button>
-                    <span>Already have an account? <a href="">Log in</a></span>
+                    <span class="log-in-text">Already have an account? <a href="">Log in</a></span>
                 </div>
             </form>
         </section>
